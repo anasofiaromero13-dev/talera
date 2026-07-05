@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Talera | Bilingual LATAM Talent, Embedded in U.S. Teams</title>
+<meta name="description" content="Talera sources and places elite bilingual LATAM finance and engineering professionals into U.S. companies. Vetted candidates in 2 weeks.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Lato:wght@700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --midnight:#231D5D;
+  --electric:#3478F6;
+  --sky:#A8C5FF;
+  --orange:#FF7A00;
+  --graphite:#4C4C4C;
+  --white:#FFFFFF;
+  --sky-tint:#EEF3FF;
+  --midnight-90:#2B2570;
+  --line:#D9E2F5;
+  --maxw:1120px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;font-size:16px;line-height:1.55;color:var(--graphite);background:var(--white)}
+img{max-width:100%}
+a{color:var(--electric);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3{font-family:'Montserrat',sans-serif;color:var(--midnight);line-height:1.15}
+h1{font-size:clamp(30px,4.6vw,52px);font-weight:800;text-transform:uppercase;letter-spacing:.01em}
+h2{font-size:clamp(24px,3vw,34px);font-weight:800;text-transform:uppercase;letter-spacing:.01em}
+h3{font-size:19px;font-weight:700}
+.sub{font-family:'Lato',sans-serif;font-weight:700}
+.num,.mono{font-family:'IBM Plex Mono',monospace;font-weight:700}
+.eyebrow{font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--electric);display:block;margin-bottom:14px}
+.eyebrow.on-dark{color:var(--sky)}
+.hero h1,.case-hero h1,.cta-band h2,
+section[style*="background:var(--midnight)"] h1,
+section[style*="background:var(--midnight)"] h2,
+section[style*="background:var(--midnight)"] h3{color:var(--white)}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+section.block{padding:72px 0}
+section.block.tight{padding:52px 0}
+.on-dark{color:var(--white)}
+.on-dark h1,.on-dark h2,.on-dark h3{color:var(--white)}
+.on-dark p{color:#D7DDF4}
+.lede{font-size:18px;max-width:720px}
+:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+
+/* ---------- Nav ---------- */
+header{position:sticky;top:0;z-index:60;background:var(--midnight);border-bottom:1px solid rgba(168,197,255,.25)}
+.nav{max-width:var(--maxw);margin:0 auto;padding:0 24px;height:64px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:'Montserrat',sans-serif;font-weight:800;font-size:19px;letter-spacing:.42em;color:var(--white);text-decoration:none}
+.logo:hover{text-decoration:none;color:var(--sky)}
+.nav-links{display:flex;align-items:center;gap:26px;list-style:none}
+.nav-links a{font-family:'Lato',sans-serif;font-weight:700;font-size:13.5px;letter-spacing:.04em;color:#C9D4F2;text-transform:uppercase}
+.nav-links a:hover{color:var(--white);text-decoration:none}
+.nav-links a.active{color:var(--white);border-bottom:2px solid var(--electric);padding-bottom:4px}
+.btn{display:inline-block;font-family:'Lato',sans-serif;font-weight:700;font-size:14px;letter-spacing:.04em;text-transform:uppercase;padding:13px 26px;border-radius:4px;border:0;cursor:pointer;text-decoration:none}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.btn-primary{background:var(--electric);color:var(--white)}
+.btn-outline{background:transparent;color:var(--white);border:2px solid var(--sky)}
+.btn-outline-dark{background:transparent;color:var(--midnight);border:2px solid var(--midnight)}
+.btn-sm{padding:10px 18px;font-size:12.5px}
+.hamburger{display:none;background:none;border:0;cursor:pointer;padding:8px}
+.hamburger span{display:block;width:24px;height:2.5px;background:var(--white);margin:5px 0}
+@media (max-width:880px){
+  .nav-links{display:none;position:absolute;top:64px;left:0;right:0;background:var(--midnight);flex-direction:column;gap:0;padding:8px 0 20px;border-bottom:1px solid rgba(168,197,255,.25)}
+  .nav-links.open{display:flex}
+  .nav-links li{width:100%;text-align:center;padding:12px 0}
+  .hamburger{display:block}
+  .nav .btn{display:none}
+}
+
+/* ---------- Pages ---------- */
+.page{display:none}
+.page.active{display:block}
+
+/* ---------- Hero ---------- */
+.hero{background:var(--midnight);padding:88px 0 0}
+.hero .container{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding-bottom:72px}
+.hero p.lede{color:#D7DDF4;margin:20px 0 30px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+.hero-panel{background:var(--midnight-90);border:1px solid rgba(168,197,255,.3);border-radius:6px;padding:26px}
+.hero-panel .row{display:flex;justify-content:space-between;align-items:baseline;padding:13px 0;border-bottom:1px solid rgba(168,197,255,.18)}
+.hero-panel .row:last-child{border-bottom:0}
+.hero-panel .label{font-size:13.5px;color:#C9D4F2}
+.hero-panel .val{font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:17px;color:var(--white)}
+.hero-panel .val.hot{color:var(--orange)}
+@media (max-width:880px){.hero .container{grid-template-columns:1fr}.hero{padding-top:56px}}
+
+/* ---------- Cards & grids ---------- */
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media (max-width:880px){.grid-2,.grid-3{grid-template-columns:1fr}}
+.card{border:1px solid var(--line);border-radius:6px;padding:28px;background:var(--white)}
+.card.dark{background:var(--midnight);border-color:var(--midnight)}
+.card.dark h3,.card.dark .sub{color:var(--white)}
+.card.dark p,.card.dark li{color:#D7DDF4}
+.card.tint{background:var(--sky-tint);border-color:var(--sky)}
+.card ul{list-style:none;margin-top:14px}
+.card ul li{padding:7px 0 7px 22px;position:relative;font-size:15px}
+.card ul li::before{content:"";position:absolute;left:0;top:14px;width:9px;height:9px;background:var(--electric);border-radius:2px}
+.card.dark ul li::before{background:var(--sky)}
+.model-tag{display:inline-block;font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;padding:5px 10px;border-radius:3px;margin-bottom:14px;background:var(--sky-tint);color:var(--electric)}
+.card.dark .model-tag{background:rgba(52,120,246,.25);color:var(--sky)}
+
+/* ---------- Steps ---------- */
+.steps{margin-top:36px;border-top:2px solid var(--midnight)}
+.step{display:grid;grid-template-columns:120px 1fr 210px;gap:24px;padding:24px 0;border-bottom:1px solid var(--line);align-items:start}
+.step .no{font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:26px;color:var(--electric)}
+.step .no small{display:block;font-size:11px;letter-spacing:.18em;color:var(--graphite);text-transform:uppercase;margin-top:2px}
+.step .time{font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:14px;color:var(--midnight);background:var(--sky-tint);border:1px solid var(--sky);border-radius:4px;padding:8px 12px;text-align:center}
+.step h3{margin-bottom:6px}
+@media (max-width:880px){.step{grid-template-columns:1fr}.step .time{width:fit-content}}
+
+/* ---------- Roles ---------- */
+.rolegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
+@media (max-width:880px){.rolegrid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.rolegrid{grid-template-columns:1fr}}
+.role{border:1px solid rgba(168,197,255,.35);border-radius:5px;padding:18px;background:var(--midnight-90)}
+.role .rn{font-family:'Lato',sans-serif;font-weight:700;color:var(--white);font-size:15.5px}
+.role .rf{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--sky);display:block;margin-bottom:6px}
+
+/* ---------- Vertical tiles ---------- */
+.vert{border-left:4px solid var(--electric);background:var(--sky-tint);padding:22px;border-radius:0 6px 6px 0}
+.vert h3{margin-bottom:6px}
+.vert p{font-size:14.5px}
+
+/* ---------- Proof ---------- */
+.proof{background:var(--midnight);border-radius:8px;padding:44px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.proof .metrics{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.metric .n{font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:34px;color:var(--orange);display:block;line-height:1.1}
+.metric .l{font-size:13px;color:#C9D4F2;text-transform:uppercase;letter-spacing:.08em}
+@media (max-width:880px){.proof{grid-template-columns:1fr;padding:30px}}
+
+/* ---------- Tables ---------- */
+table.pricing{width:100%;border-collapse:collapse;margin-top:18px;font-size:15px}
+table.pricing th{font-family:'Lato',sans-serif;font-weight:700;text-align:left;color:var(--midnight);border-bottom:2px solid var(--midnight);padding:10px 12px;text-transform:uppercase;font-size:12.5px;letter-spacing:.06em}
+table.pricing td{border-bottom:1px solid var(--line);padding:12px}
+table.pricing td.v{font-family:'IBM Plex Mono',monospace;font-weight:700;color:var(--midnight);white-space:nowrap}
+
+/* ---------- FAQ ---------- */
+.faq details{border:1px solid var(--line);border-radius:5px;margin-bottom:12px;background:var(--white)}
+.faq summary{cursor:pointer;padding:18px 20px;font-family:'Lato',sans-serif;font-weight:700;color:var(--midnight);list-style:none;display:flex;justify-content:space-between;gap:12px}
+.faq summary::after{content:"+";font-family:'IBM Plex Mono',monospace;color:var(--electric);font-weight:700}
+.faq details[open] summary::after{content:"-"}
+.faq .a{padding:0 20px 18px;font-size:15px}
+
+/* ---------- Forms ---------- */
+form .field{margin-bottom:18px}
+label{display:block;font-family:'Lato',sans-serif;font-weight:700;font-size:13.5px;color:var(--midnight);margin-bottom:6px;text-transform:uppercase;letter-spacing:.04em}
+input[type=text],input[type=email],select,textarea{width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:4px;font-family:'Inter',sans-serif;font-size:15px;color:var(--midnight);background:var(--white)}
+input:focus,select:focus,textarea:focus{border-color:var(--electric);outline:none}
+.form-note{font-size:13px;color:var(--graphite)}
+.success{background:var(--sky-tint);border:1.5px solid var(--electric);border-radius:6px;padding:22px;color:var(--midnight)}
+.success .sub{color:var(--midnight);display:block;margin-bottom:6px}
+
+/* ---------- Tools ---------- */
+.tool-shell{border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.tool-head{background:var(--midnight);padding:26px 30px}
+.tool-head h2{font-size:22px}
+.tool-body{padding:30px}
+.qopt{display:block;width:100%;text-align:left;background:var(--white);border:1.5px solid var(--line);border-radius:5px;padding:14px 16px;margin-bottom:10px;font-family:'Inter',sans-serif;font-size:15px;color:var(--graphite);cursor:pointer}
+.qopt:hover{border-color:var(--electric)}
+.qopt.sel{border-color:var(--electric);background:var(--sky-tint);color:var(--midnight);font-weight:600}
+.qprog{height:6px;background:var(--sky-tint);border-radius:3px;margin-bottom:26px;overflow:hidden}
+.qprog span{display:block;height:100%;background:var(--electric);width:0;transition:width .25s}
+.qcount{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:12.5px;letter-spacing:.14em;color:var(--electric);text-transform:uppercase;margin-bottom:10px;display:block}
+.tier-badge{display:inline-block;font-family:'Montserrat',sans-serif;font-weight:800;text-transform:uppercase;font-size:15px;letter-spacing:.06em;padding:10px 18px;border-radius:4px;margin-bottom:16px}
+.tier-a{background:var(--electric);color:var(--white)}
+.tier-b{background:var(--sky);color:var(--midnight)}
+.tier-c{background:var(--orange);color:var(--white)}
+.calc-grid{display:grid;grid-template-columns:340px 1fr;gap:30px}
+@media (max-width:880px){.calc-grid{grid-template-columns:1fr}}
+.result-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media (max-width:720px){.result-cols{grid-template-columns:1fr}}
+.rescol{border:1.5px solid var(--line);border-radius:6px;padding:20px;background:var(--white)}
+.rescol.hi{border-color:var(--electric);background:var(--sky-tint)}
+.rescol .ct{font-family:'Lato',sans-serif;font-weight:700;color:var(--midnight);font-size:14px;text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px;display:block}
+.rescol .total{font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:23px;color:var(--midnight);display:block;margin:8px 0 4px}
+.rescol .per{font-size:12.5px;color:var(--graphite)}
+.rescol ul{list-style:none;margin-top:14px;border-top:1px solid var(--line);padding-top:10px}
+.rescol li{display:flex;justify-content:space-between;font-size:13.5px;padding:5px 0;gap:10px}
+.rescol li .lv{font-family:'IBM Plex Mono',monospace;font-weight:600;color:var(--midnight);white-space:nowrap}
+.rescol .buys{margin-top:14px;font-size:13px;border-top:1px solid var(--line);padding-top:10px}
+.locked{filter:blur(4px);pointer-events:none;user-select:none}
+.gate{background:var(--midnight);border:1px solid rgba(168,197,255,.4);border-radius:6px;padding:24px;margin-top:20px}
+.gate p{color:#D7DDF4;font-size:14.5px;margin-bottom:14px}
+.gate form{display:flex;gap:10px;flex-wrap:wrap}
+.gate input{flex:1;min-width:180px}
+
+/* ---------- Blog ---------- */
+.post-card{border:1px solid var(--line);border-radius:6px;padding:26px;display:flex;flex-direction:column;gap:10px}
+.post-card .meta{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--electric)}
+.post-card h3 a{color:var(--midnight)}
+article.post{max-width:720px;margin:0 auto}
+article.post h1{font-size:clamp(26px,3.4vw,38px);text-transform:none;margin-bottom:10px}
+article.post .meta{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--electric);display:block;margin-bottom:26px}
+article.post p{margin-bottom:18px}
+article.post h2{font-size:21px;text-transform:none;margin:30px 0 12px}
+
+/* ---------- CTA band & footer ---------- */
+.cta-band{background:var(--midnight);text-align:center;padding:64px 24px}
+.cta-band h2{margin-bottom:12px}
+.cta-band p{color:#D7DDF4;max-width:560px;margin:0 auto 26px}
+footer{background:var(--midnight);border-top:1px solid rgba(168,197,255,.22);padding:36px 0}
+footer .container{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+footer .fl{color:#C9D4F2;font-size:13.5px}
+footer a{color:var(--sky)}
+footer nav a{margin-left:18px;font-size:13px;text-transform:uppercase;font-family:'Lato',sans-serif;font-weight:700}
+
+.case-hero{background:var(--midnight);padding:72px 0 56px}
+.kv{display:flex;gap:34px;flex-wrap:wrap;margin-top:28px}
+.kv div .n{font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:28px;color:var(--orange);display:block}
+.kv div .l{font-size:12.5px;color:#C9D4F2;text-transform:uppercase;letter-spacing:.08em}
+.founder{border-top:2px solid var(--midnight);padding-top:18px}
+.founder .fn{font-family:'Lato',sans-serif;font-weight:700;color:var(--midnight);font-size:16px}
+.founder .fr{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--electric);display:block;margin:3px 0 10px}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav" aria-label="Main">
+    <a class="logo" href="#home">TALERA</a>
+    <button class="hamburger" aria-label="Open menu" onclick="document.getElementById('navlinks').classList.toggle('open')"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navlinks">
+      <li><a href="#home" data-nav="home">Home</a></li>
+      <li><a href="#services" data-nav="services">Services</a></li>
+      <li><a href="#case-study" data-nav="case-study">Case Study</a></li>
+      <li><a href="#about" data-nav="about">About</a></li>
+      <li><a href="#blog" data-nav="blog">Blog</a></li>
+      <li><a href="#contact" data-nav="contact">Contact</a></li>
+    </ul>
+    <a class="btn btn-primary btn-sm" href="#contact">Book a Call</a>
+  </nav>
+</header>
+
+<main id="app">
+
+<!-- ================= HOME ================= -->
+<div class="page" id="page-home">
+
+  <section class="hero">
+    <div class="container">
+      <div>
+        <span class="eyebrow on-dark">Nearshore Talent Placement</span>
+        <h1>Elite bilingual LATAM professionals, embedded in your team</h1>
+        <p class="lede">Talera sources, vets, and places high-caliber finance and engineering talent into U.S. companies. Vetted candidates in front of you within two weeks, working inside your team shortly after.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Book a Call</a>
+          <a class="btn btn-outline" href="#calculator">Compare Hiring Costs</a>
+        </div>
+      </div>
+      <div class="hero-panel" aria-label="Placement snapshot">
+        <div class="row"><span class="label">Candidates presented</span><span class="val">2 to 3, fully vetted</span></div>
+        <div class="row"><span class="label">Time to shortlist</span><span class="val hot">2 weeks</span></div>
+        <div class="row"><span class="label">Time to operational</span><span class="val hot">2 to 4 weeks</span></div>
+        <div class="row"><span class="label">English level</span><span class="val">C1 or native</span></div>
+        <div class="row"><span class="label">Time zone overlap</span><span class="val">U.S. business hours</span></div>
+        <div class="row"><span class="label">Cost until you sign</span><span class="val hot">$0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="container">
+      <span class="eyebrow">Two Ways to Work With Us</span>
+      <h2>Hire them, or let us run it</h2>
+      <p class="lede" style="margin-top:14px">Both models start with the same sourcing and vetting. The difference is what happens after you pick your candidate.</p>
+      <div class="grid-2" style="margin-top:32px">
+        <div class="card tint">
+          <span class="model-tag">Model 1 · Direct Hire</span>
+          <h3>Headhunting</h3>
+          <p style="margin-top:8px">You define the role. We present 2 to 3 vetted candidates. You hire your pick directly onto your team, and our work is done.</p>
+          <ul>
+            <li>One-time placement fee, based on first-year salary</li>
+            <li>90-day guarantee with replacement included</li>
+            <li>Best for companies building in-house teams</li>
+          </ul>
+        </div>
+        <div class="card dark">
+          <span class="model-tag">Model 2 · Managed</span>
+          <h3>Embedded Professional</h3>
+          <p style="margin-top:8px">Same sourcing. Talera contracts the professional and embeds them in your team. You direct the daily work. We handle contracts, compliance, and performance management.</p>
+          <ul>
+            <li>Single monthly fee, no hiring friction on your side</li>
+            <li>Monthly performance reviews and replacement coverage</li>
+            <li>Option to hire directly after 12 months</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block tight" style="background:var(--electric)">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
+      <div style="max-width:640px">
+        <span class="eyebrow" style="color:#FFD9B3">Interactive · 2 Minutes</span>
+        <h2 style="color:var(--white)">What does the same role cost three ways?</h2>
+        <p style="color:#EAF1FF;margin-top:10px">In-house hire, U.S. contractor, or Talera placement. Run your role through the comparison and see what each option buys.</p>
+      </div>
+      <a class="btn" style="background:var(--white);color:var(--electric)" href="#calculator">Run the Comparison</a>
+    </div>
+  </section>
+
+  <section class="block tight" style="background:var(--sky-tint)">
+    <div class="container">
+      <span class="eyebrow">Process</span>
+      <h2>How it works</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="no">01<small>Intake</small></div>
+          <div><h3>Define the role</h3><p>One call to lock the role, seniority, budget, and start timeline. We translate it into a sourcing brief the same day.</p></div>
+          <div class="time">Day 1</div>
+        </div>
+        <div class="step">
+          <div class="no">02<small>Sourcing</small></div>
+          <div><h3>Source and screen</h3><p>We check our existing vetted network first, then source across LATAM. Every candidate passes a live English interview and a role-specific skills task.</p></div>
+          <div class="time">Days 2 to 10</div>
+        </div>
+        <div class="step">
+          <div class="no">03<small>Shortlist</small></div>
+          <div><h3>Meet 2 to 3 finalists</h3><p>You receive one-page profiles with verified experience, skills validation results, and rate. You interview and choose.</p></div>
+          <div class="time">Week 2</div>
+        </div>
+        <div class="step">
+          <div class="no">04<small>Onboarding</small></div>
+          <div><h3>Operational inside your team</h3><p>Contracts executed, KPIs agreed in writing in the first week, and a 30-day check-in with both sides. Our fastest placement was fully operational in two weeks.</p></div>
+          <div class="time">Weeks 2 to 4</div>
+        </div>
+      </div>
+      <p class="form-note" style="margin-top:18px">Timelines above apply to our priority roles below. Other roles typically add 2 to 3 weeks of sourcing time.</p>
+      <p style="margin-top:14px;max-width:760px"><strong style="color:var(--midnight)">Steps 1 through 3 cost nothing.</strong> Sourcing, vetting, and interviews are free. Fees apply only when you find the right fit and sign, directly or through Talera.</p>
+    </div>
+  </section>
+
+  <section class="block" style="background:var(--midnight)">
+    <div class="container">
+      <span class="eyebrow on-dark">Ready Network</span>
+      <h2 class="on-dark" style="color:var(--white)">Roles we fill fastest</h2>
+      <p class="lede" style="color:#D7DDF4;margin-top:14px">These are named roles with active, pre-vetted candidate pipelines, not a generic capability list.</p>
+      <div class="rolegrid">
+        <div class="role"><span class="rf">Finance</span><span class="rn">FP&amp;A Analyst</span></div>
+        <div class="role"><span class="rf">Finance</span><span class="rn">M&amp;A Analyst</span></div>
+        <div class="role"><span class="rf">Finance</span><span class="rn">Project Finance Analyst</span></div>
+        <div class="role"><span class="rf">Finance</span><span class="rn">Corporate Finance Analyst</span></div>
+        <div class="role"><span class="rf">Engineering</span><span class="rn">Full Stack Engineer</span></div>
+        <div class="role"><span class="rf">Engineering</span><span class="rn">Solar Engineer</span></div>
+      </div>
+      <p style="color:#D7DDF4;margin-top:24px;max-width:760px">Our core practice is finance and engineering, across every function and seniority level. We also place marketing, operations, and data professionals, with a longer sourcing timeline.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="container">
+      <span class="eyebrow">Verticals</span>
+      <h2>Where we work</h2>
+      <div class="grid-3" style="margin-top:30px">
+        <div class="vert"><h3>Renewable Energy &amp; Solar</h3><p>M&amp;A support, project finance, and technical analysis for utility-scale developers and IPPs.</p></div>
+        <div class="vert"><h3>PE &amp; Portfolio Companies</h3><p>FP&amp;A, investor reporting, and transaction support for funds and their operating companies.</p></div>
+        <div class="vert"><h3>Infrastructure &amp; Data Centers</h3><p>Project finance and engineering capacity for grid-scale and capex-heavy builders.</p></div>
+        <div class="vert"><h3>Fintech</h3><p>Credit analysis, due diligence, and engineering support for financial services teams.</p></div>
+        <div class="vert"><h3>Startups &amp; SMBs</h3><p>Embedded finance and engineering talent for growing companies scaling ahead of headcount.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block tight">
+    <div class="container">
+      <div class="proof">
+        <div>
+          <span class="eyebrow on-dark">Proof Point</span>
+          <h3 class="on-dark" style="color:var(--white);font-size:23px">One analyst. Forty projects.</h3>
+          <p style="color:#D7DDF4;margin-top:12px">A utility-scale solar developer needed M&amp;A analysis capacity mid-deal-cycle. Talera placed an embedded analyst who was operational within two weeks and has supported the pipeline continuously since.</p>
+          <a class="btn btn-outline btn-sm" href="#case-study" style="margin-top:18px">Read the case study</a>
+        </div>
+        <div class="metrics">
+          <div class="metric"><span class="n">40</span><span class="l">Projects supported</span></div>
+          <div class="metric"><span class="n">15</span><span class="l">Portfolios</span></div>
+          <div class="metric"><span class="n">8+</span><span class="l">Months embedded</span></div>
+          <div class="metric"><span class="n">2</span><span class="l">Weeks to operational</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" style="background:var(--sky-tint)" id="quiz-anchor">
+    <div class="container" style="max-width:780px">
+      <span class="eyebrow">Is Your Team Ready?</span>
+      <h2>Find out in eight questions</h2>
+      <p class="lede" style="margin:14px 0 26px">Three minutes to see whether your team is set up to get value from an embedded professional now, or what to put in place first.</p>
+      <div class="tool-shell">
+        <div class="tool-body" id="quiz-body"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <span class="eyebrow on-dark">Next Step</span>
+    <h2>Tell us the role. We'll show you the people.</h2>
+    <p>One call to define what you need. Vetted candidates within two weeks for priority roles.</p>
+    <a class="btn btn-primary" href="#contact">Book a Call</a>
+  </section>
+</div>
+
+<!-- ================= SERVICES ================= -->
+<div class="page" id="page-services">
+  <section class="block" style="background:var(--midnight);padding-bottom:56px">
+    <div class="container">
+      <span class="eyebrow on-dark">Services</span>
+      <h1 style="font-size:clamp(28px,3.6vw,44px)">Two models. One standard of talent.</h1>
+      <p class="lede" style="color:#D7DDF4;margin-top:16px">Every engagement starts with the same sourcing and vetting process. You choose whether the professional joins your payroll or stays managed by Talera.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="container">
+      <div class="grid-2">
+        <div class="card tint">
+          <span class="model-tag">Model 1 · Direct Hire</span>
+          <h3>Headhunting</h3>
+          <p style="margin-top:8px">For teams that want the person in-house from day one.</p>
+          <ul>
+            <li><strong>What you get:</strong> 2 to 3 vetted, interview-ready candidates matched to your role, budget, and seniority</li>
+            <li><strong>Vetting:</strong> live English interview, role-specific skills task, and reference checks on every finalist</li>
+            <li><strong>Timeline:</strong> shortlist in 2 weeks for priority roles, hire typically closed in 3 to 4 weeks</li>
+            <li><strong>Pricing:</strong> one-time fee of 18 to 28 percent of first-year salary, scaled to seniority; flat-fee options available for defined roles</li>
+            <li><strong>Guarantee:</strong> 90 days, replacement included</li>
+          </ul>
+        </div>
+        <div class="card dark">
+          <span class="model-tag">Model 2 · Managed</span>
+          <h3>Embedded Professional</h3>
+          <p style="margin-top:8px">For teams that want the capacity without the hiring overhead.</p>
+          <ul>
+            <li><strong>What you get:</strong> a dedicated professional working inside your team, on your tools, in your time zone</li>
+            <li><strong>You direct the work:</strong> assign tasks, set priorities, and evaluate output directly</li>
+            <li><strong>We handle the rest:</strong> contracting, cross-border compliance, monthly performance reviews, and replacement if needed</li>
+            <li><strong>Timeline:</strong> operational in 2 to 4 weeks for priority roles</li>
+            <li><strong>Pricing:</strong> a single monthly fee per professional, quoted by role and seniority. No setup fees, no hidden costs</li>
+            <li><strong>After 12 months:</strong> hire the professional directly through a one-time conversion fee, or continue the engagement</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card tint" style="margin-top:24px;display:flex;gap:18px;align-items:baseline;flex-wrap:wrap">
+        <span class="num" style="font-size:26px;color:var(--electric)">$0</span>
+        <p style="flex:1;min-width:260px;color:var(--midnight)"><strong>Until you sign, you pay nothing.</strong> Sourcing, vetting, and every interview are free in both models. Fees apply only when you have found the right fit and are ready to contract, directly or through Talera.</p>
+      </div>
+
+      <h2 style="margin-top:64px">What we place</h2>
+      <p style="margin-top:12px;max-width:760px">Priority order reflects where our vetted network is deepest today.</p>
+      <table class="pricing">
+        <thead><tr><th>Category</th><th>Named roles</th><th>Shortlist timeline</th></tr></thead>
+        <tbody>
+          <tr><td><strong style="color:var(--midnight)">Finance &amp; Operations</strong></td><td>FP&amp;A Analyst · M&amp;A Analyst · Project Finance Analyst · Corporate Finance Analyst, plus any other finance role</td><td class="v">2 weeks</td></tr>
+          <tr><td><strong style="color:var(--midnight)">Engineering &amp; Technology</strong></td><td>Full Stack Engineer · Solar Engineer, plus any other engineering role</td><td class="v">2 weeks</td></tr>
+          <tr><td><strong style="color:var(--midnight)">Other functions</strong></td><td>Marketing, operations, and data professionals sourced on request</td><td class="v">4 to 6 weeks</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="block" style="background:var(--midnight)" id="calc-anchor">
+    <div class="container">
+      <span class="eyebrow on-dark" style="color:var(--orange)">Interactive · 2 Minutes</span>
+      <h2 style="color:var(--white)">Compare the cost of your next hire</h2>
+      <p class="lede" style="color:#D7DDF4;margin:14px 0 30px">One role, three ways to fill it: a U.S. in-house hire, a U.S. contractor, and a Talera placement. Estimates use market salary bands; your quote will be exact.</p>
+<div class="calc-grid">
+        <div class="card tint">
+          <form id="calc-form" onsubmit="return false">
+            <div class="field">
+              <label for="c-role">Role</label>
+              <select id="c-role">
+                <option value="fpa">FP&amp;A Analyst</option>
+                <option value="ma">M&amp;A Analyst</option>
+                <option value="pf">Project Finance Analyst</option>
+                <option value="cf">Corporate Finance Analyst</option>
+                <option value="fs">Full Stack Engineer</option>
+                <option value="se">Solar Engineer</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="c-sen">Seniority</label>
+              <select id="c-sen">
+                <option value="0">Analyst (1 to 3 yrs)</option>
+                <option value="1">Associate (3 to 5 yrs)</option>
+                <option value="2">Senior (5 to 8 yrs)</option>
+                <option value="3">Lead (8 to 10 yrs)</option>
+                <option value="4">Manager (10+ yrs)</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="c-sal">U.S. base salary, if you know it (optional)</label>
+              <input type="text" id="c-sal" inputmode="numeric" placeholder="e.g. 110000">
+              <p class="form-note" style="margin-top:6px">Leave blank to use the market band for the role.</p>
+            </div>
+            <button class="btn btn-primary" style="width:100%" onclick="runCalc()">Compare Costs</button>
+          </form>
+        </div>
+        <div id="calc-out">
+          <div class="card" style="border-style:dashed;text-align:center;padding:48px 28px;background:var(--white)">
+            <p>Pick a role and seniority, then run the comparison.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" style="padding-top:56px">
+    <div class="container">
+      <h2>Every professional we place</h2>
+      <div class="grid-3" style="margin-top:26px">
+        <div class="vert"><h3>Bilingual, C1+</h3><p>Fluent English verified in a live interview. No exceptions.</p></div>
+        <div class="vert"><h3>U.S. time zones</h3><p>Meaningful overlap with Eastern, Central, or Mountain hours.</p></div>
+        <div class="vert"><h3>Skills-validated</h3><p>A real work sample or technical task before you ever see the profile.</p></div>
+      </div>
+
+      <h2 style="margin-top:64px">Frequently asked</h2>
+      <div class="faq" style="margin-top:24px;max-width:820px">
+        <details>
+          <summary>When do we start paying?</summary>
+          <div class="a">Only when you sign. Sourcing, vetting, and interviews are free in both models. The first fee is the placement fee when you hire a candidate directly, or the first monthly fee when an embedded engagement begins through Talera.</div>
+        </details>
+        <details>
+          <summary>How fast can someone actually start?</summary>
+          <div class="a">For our priority roles, you see a shortlist within 2 weeks and the professional is typically working inside your team within 2 to 4 weeks of the intake call. Roles outside the priority list add 2 to 3 weeks of sourcing time.</div>
+        </details>
+        <details>
+          <summary>How does pricing work?</summary>
+          <div class="a">Direct hire: a one-time fee of 18 to 28 percent of first-year salary, depending on seniority, with a 90-day replacement guarantee. Embedded professionals: one monthly fee per professional, quoted by role and seniority, covering the professional's compensation, our management, compliance, and replacement coverage. You receive an exact quote before committing to anything. For a ballpark first, <a href="#calculator">run your role through the comparison above</a>.</div>
+        </details>
+        <details>
+          <summary>Who employs the professional in the managed model?</summary>
+          <div class="a">Talera does. The professional works under contract with Talera, so you get embedded capacity without cross-border hiring, contracting, or compliance work on your side. You direct the day-to-day work; we manage everything else.</div>
+        </details>
+        <details>
+          <summary>What happens after 12 months of a managed engagement?</summary>
+          <div class="a">You choose. Continue the engagement as-is, or hire the professional directly by paying a one-time conversion fee. The fee is a percentage of the professional's annualized rate and decreases the longer the engagement has run, so long-term clients convert on better terms.</div>
+        </details>
+        <details>
+          <summary>What if the person isn't working out?</summary>
+          <div class="a">Direct hires carry a 90-day replacement guarantee. In managed engagements, we run monthly performance reviews with you and the professional, and if performance can't be remediated we assign a replacement.</div>
+        </details>
+        <details>
+          <summary>Can you source roles you don't list?</summary>
+          <div class="a">Yes. Finance and engineering roles across all functions and seniority levels are our core practice and move on the two-week timeline. Marketing, operations, and data roles run as dedicated searches: 2 to 3 vetted candidates, typically within 4 to 6 weeks, with a midpoint update.</div>
+        </details>
+      </div>
+
+      <div class="cta-band" style="border-radius:8px;margin-top:64px">
+        <h2>Get an exact quote for your role</h2>
+        <p>Tell us the role and seniority. We'll respond with a timeline and a number.</p>
+        <a class="btn btn-primary" href="#contact">Book a Call</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= CASE STUDY ================= -->
+<div class="page" id="page-case-study">
+  <section class="case-hero">
+    <div class="container">
+      <span class="eyebrow on-dark">Case Study · Renewable Energy</span>
+      <h1 style="font-size:clamp(26px,3.4vw,42px);text-transform:none">One embedded analyst carried the M&amp;A pipeline of a utility-scale solar developer</h1>
+      <div class="kv">
+        <div><span class="n">40</span><span class="l">Projects supported</span></div>
+        <div><span class="n">15</span><span class="l">Portfolios</span></div>
+        <div><span class="n">8+</span><span class="l">Months embedded</span></div>
+        <div><span class="n">2</span><span class="l">Weeks to operational</span></div>
+      </div>
+    </div>
+  </section>
+  <section class="block">
+    <div class="container">
+      <article class="post">
+        <h2>The result</h2>
+        <p>Within two weeks of the intake call, a Talera analyst was fully operational inside the client's deal team. Over the following eight months, the analyst supported 40 utility-scale solar projects across 15 portfolios: financial models, due diligence packs, and transaction materials delivered at deal pace. The engagement is ongoing.</p>
+
+        <h2>The client</h2>
+        <p>The client is a U.S. utility-scale solar developer with an active acquisition pipeline. Its identity is confidential, as with every client we reference. Deal volume had outgrown the internal team's analysis capacity, and a U.S. analyst search was projected to take a full quarter the team did not have.</p>
+
+        <h2>The role</h2>
+        <p>Talera scoped the role as an embedded M&amp;A analyst: project-level financial modeling, portfolio due diligence, investor materials, and data room management, working directly with the client's deal leads during U.S. business hours.</p>
+
+        <h2>What Talera did</h2>
+        <p>Talera presented vetted finalists within two weeks. Each candidate had passed a live English interview, a financial modeling task built around a real solar transaction, and reference checks. The client selected its analyst, Talera executed the engagement under its managed model, and KPIs were agreed in writing in the first week.</p>
+
+        <h2>Why it held up</h2>
+        <p>The analyst worked as part of the client's team, not as an external vendor: same tools, same meetings, same deadlines. Monthly performance reviews between Talera and the client's deal lead kept expectations explicit as deal volume grew. Capacity that was projected to take a quarter to hire was producing work in fourteen days.</p>
+
+        <div class="card tint" style="margin-top:34px">
+          <h3>Need the same capacity?</h3>
+          <p style="margin-top:8px">M&amp;A, FP&amp;A, and project finance analysts are our fastest placements: shortlist in two weeks. Not sure your team is set up for it yet? <a href="#quiz">The readiness quiz</a> takes three minutes.</p>
+          <a class="btn btn-primary btn-sm" href="#contact" style="margin-top:16px">Book a Call</a>
+        </div>
+      </article>
+    </div>
+  </section>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<div class="page" id="page-about">
+  <section class="block" style="background:var(--midnight);padding-bottom:56px">
+    <div class="container">
+      <span class="eyebrow on-dark">About Talera</span>
+      <h1 style="font-size:clamp(28px,3.6vw,44px)">Built by operators who were the talent first</h1>
+      <p class="lede" style="color:#D7DDF4;margin-top:16px">Talera started with its own founders embedded inside U.S. companies, doing the finance and engineering work themselves. The placement firm grew out of what that experience proved.</p>
+    </div>
+  </section>
+  <section class="block">
+    <div class="container">
+      <div class="grid-2" style="align-items:start">
+        <div>
+          <h2>The story</h2>
+          <p style="margin-top:14px">Before Talera placed anyone, its founders were the ones being placed. They worked inside U.S. deal teams and engineering organizations, delivering M&amp;A analysis and technical work at the pace those environments demand. Two things became obvious: LATAM has an exceptional pool of bilingual finance and engineering professionals, and U.S. companies have no reliable way to find and vet them.</p>
+          <p style="margin-top:14px">Talera was formalized in 2026 to close that gap. Today it is a talent placement firm with one job: find elite bilingual LATAM professionals, prove they can do the work, and place them inside U.S. teams, either as direct hires or as embedded professionals Talera manages end to end.</p>
+        </div>
+        <div class="card dark">
+          <h3>Not a staffing agency</h3>
+          <p style="margin-top:10px">Agencies fill seats from a database. Talera builds a vetted network role by role, screens every candidate through a live English interview and a real skills task, and stays accountable after the placement: written KPIs in week one, a 30-day check-in, and monthly performance reviews on managed engagements.</p>
+          <p style="margin-top:12px">The nearshore, bilingual model is the differentiator: professionals who work your hours, in your language, at a caliber that holds up in front of investors and clients.</p>
+        </div>
+      </div>
+
+      <h2 style="margin-top:64px">Founders</h2>
+      <div class="grid-3" style="margin-top:26px">
+        <div class="founder">
+          <span class="fn">Ana Romero</span>
+          <span class="fr">Co-founder · Growth &amp; Strategy</span>
+          <p style="font-size:14.5px">Leads client relationships, business development, and the firm's strategic direction from New York.</p>
+        </div>
+        <div class="founder">
+          <span class="fn">Daniel Villate</span>
+          <span class="fr">Co-founder · Finance</span>
+          <p style="font-size:14.5px">Finance lead with hands-on experience embedded in U.S. deal teams; shapes how Talera vets and supports finance talent.</p>
+        </div>
+        <div class="founder">
+          <span class="fn">Nicolás Orduz</span>
+          <span class="fr">Co-founder · Engineering &amp; Talent</span>
+          <p style="font-size:14.5px">Owns recruiting and the talent network: sourcing, screening, and candidate readiness across every placement.</p>
+        </div>
+      </div>
+
+      <div class="cta-band" style="border-radius:8px;margin-top:64px">
+        <h2>See who we'd put in front of you</h2>
+        <p>One call. We'll tell you honestly whether we can fill the role fast, and how.</p>
+        <a class="btn btn-primary" href="#contact">Book a Call</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= BLOG INDEX ================= -->
+<div class="page" id="page-blog">
+  <section class="block" style="background:var(--midnight);padding-bottom:56px">
+    <div class="container">
+      <span class="eyebrow on-dark">Insights</span>
+      <h1 style="font-size:clamp(28px,3.6vw,44px)">Blog</h1>
+      <p class="lede" style="color:#D7DDF4;margin-top:16px">Practical thinking on nearshore hiring, embedded finance talent, and engineering capacity for the teams that buy it.</p>
+    </div>
+  </section>
+  <section class="block">
+    <div class="container">
+      <div class="grid-3" id="blog-index">
+        <div class="post-card">
+          <span class="meta">PE &amp; Portfolio Companies · Jun 2026</span>
+          <h3><a href="#post-1">The analyst your portfolio company needs probably isn't in your city</a></h3>
+          <p style="font-size:14.5px">Why PE-backed operating companies are rethinking where FP&amp;A capacity comes from, and what changed to make it work.</p>
+          <a href="#post-1" class="sub" style="font-size:14px">Read the post</a>
+        </div>
+        <div class="post-card">
+          <span class="meta">Renewable Energy · Jun 2026</span>
+          <h3><a href="#post-2">The real cost of a six-month finance vacancy in solar M&amp;A</a></h3>
+          <p style="font-size:14.5px">Open analyst seats don't just delay work. In an active pipeline, they change which deals you can pursue.</p>
+          <a href="#post-2" class="sub" style="font-size:14px">Read the post</a>
+        </div>
+        <div class="post-card">
+          <span class="meta">Infrastructure · May 2026</span>
+          <h3><a href="#post-3">Data center growth is a project finance hiring problem</a></h3>
+          <p style="font-size:14.5px">Capex is scaling faster than the talent market for the analysts who model it. What operators are doing about it.</p>
+          <a href="#post-3" class="sub" style="font-size:14px">Read the post</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= BLOG POSTS ================= -->
+<div class="page" id="page-post-1">
+  <section class="block">
+    <div class="container">
+      <article class="post">
+        <span class="meta"><a href="#blog">← Blog</a> · PE &amp; Portfolio Companies · Jun 2026</span>
+        <h1>The analyst your portfolio company needs probably isn't in your city</h1>
+        <p>A familiar pattern across PE-backed operating companies: the deal closes, the value creation plan calls for tighter reporting and a real forecast, and the finance team is two people who are already underwater. The obvious answer is to hire an FP&amp;A analyst. The obvious answer takes four to six months and costs more every quarter.</p>
+        <h2>The constraint moved</h2>
+        <p>The constraint used to be trust. Could a remote analyst, three time zones away, actually operate inside a lean finance team? Post-2020, that question answered itself. Every reporting package, board deck, and forecast already lives in shared tools. The work was remote before the people were.</p>
+        <p>What remained was a vetting problem. Résumés don't tell you whether someone can build a three-statement model under a monthly close deadline, or explain a variance to a CFO in plain English. Solving that requires screening for the actual work: live interviews in English, real modeling tasks, references that get checked.</p>
+        <h2>What the math looks like</h2>
+        <p>A vetted bilingual analyst in LATAM works U.S. hours, joins the same standups, and delivers the same reporting package. The fully loaded cost sits well below a comparable U.S. hire, but the more important number is time: weeks to productive instead of months to hired. For a portfolio company on a five-year plan, two quarters of finance capacity is not a rounding error.</p>
+        <h2>What to check before you do it</h2>
+        <p>Three things predict whether an embedded analyst works out: a named owner for onboarding, documented processes for the first 90 days, and a team that already collaborates in writing. If those exist, the model works. If they don't, fix them first. They're worth fixing regardless.</p>
+        <p><a href="#quiz">Our readiness quiz</a> covers exactly these questions in three minutes.</p>
+      </article>
+    </div>
+  </section>
+</div>
+
+<div class="page" id="page-post-2">
+  <section class="block">
+    <div class="container">
+      <article class="post">
+        <span class="meta"><a href="#blog">← Blog</a> · Renewable Energy · Jun 2026</span>
+        <h1>The real cost of a six-month finance vacancy in solar M&amp;A</h1>
+        <p>Utility-scale solar deal teams price everything: hurdle rates, ITC adders, interconnection risk. The one thing that rarely gets priced is the open analyst seat sitting in the middle of the pipeline.</p>
+        <h2>Vacancies compound at deal pace</h2>
+        <p>An unfilled analyst role doesn't pause work, it redistributes it upward. Associates build models VPs should be reviewing. Diligence timelines stretch. And when the pipeline is full, the quiet cost is selection: teams pass on deals they could have run because nobody has bandwidth to model them. That cost never shows up in a budget line, which is why it never gets fixed with urgency.</p>
+        <h2>Why the seat stays open</h2>
+        <p>The U.S. talent market for project finance and M&amp;A analysts with renewable experience is thin and expensive. Searches run one to two quarters. Meanwhile the IRA-driven project pipeline keeps growing, and every developer is fishing in the same pond.</p>
+        <h2>The alternative that worked</h2>
+        <p>One utility-scale developer we work with faced exactly this. Instead of waiting out a U.S. search, they brought in an embedded bilingual analyst who was operational in two weeks and went on to support 40 projects across 15 portfolios over eight months of continuous engagement. Same tools, same meetings, U.S. hours. The pipeline never slowed down for the seat.</p>
+        <p>The lesson isn't that nearshore talent is a workaround. It's that the vetted version of it is simply a faster market for the same caliber of analyst. <a href="#case-study">The full case study is here.</a></p>
+      </article>
+    </div>
+  </section>
+</div>
+
+<div class="page" id="page-post-3">
+  <section class="block">
+    <div class="container">
+      <article class="post">
+        <span class="meta"><a href="#blog">← Blog</a> · Infrastructure · May 2026</span>
+        <h1>Data center growth is a project finance hiring problem</h1>
+        <p>AI demand turned data centers into one of the largest capex stories in the U.S. economy. Every gigawatt of announced capacity needs the same unglamorous thing behind it: analysts who can model project finance structures, track budgets against draw schedules, and keep lenders comfortable.</p>
+        <h2>The talent market didn't scale with the capex</h2>
+        <p>Project finance analysts with infrastructure experience were already scarce. Now data center developers compete with renewable developers, utilities, and infrastructure funds for the same résumés. Compensation is rising faster than headcount, and search timelines are stretching past the project milestones the hires were meant to support.</p>
+        <h2>What the fastest operators are doing</h2>
+        <p>The pattern we see among operators who keep pace: separate the seat from the geography. The modeling, reporting, and diligence work is fully digital, so the question is not where the analyst sits but whether they can do the work at the standard lenders and investment committees expect.</p>
+        <p>That standard is verifiable. A live modeling task built on a real project tells you more in two hours than a résumé tells you in two pages. Vetted bilingual analysts in LATAM, working U.S. hours, clear that bar routinely, and they can be inside a team in weeks rather than quarters.</p>
+        <h2>The takeaway</h2>
+        <p>Capex plans assume finance capacity exists to support them. For most data center operators right now, that assumption is the risk. Treat analyst capacity as part of the project schedule, and source it from the widest market that meets your standard, not the nearest one.</p>
+      </article>
+    </div>
+  </section>
+</div>
+
+<!-- ================= CONTACT ================= -->
+<div class="page" id="page-contact">
+  <section class="block" style="background:var(--midnight);padding-bottom:56px">
+    <div class="container">
+      <span class="eyebrow on-dark">Contact</span>
+      <h1 style="font-size:clamp(28px,3.6vw,44px)">Tell us the role</h1>
+      <p class="lede" style="color:#D7DDF4;margin-top:16px">We reply within one business day with an honest read on timeline and fit. Prefer email? Write to <a href="mailto:ana@talera.co" style="color:var(--sky)">ana@talera.co</a>. Still scoping? <a href="#quiz" style="color:var(--sky)">Check your team's readiness</a> or <a href="#calculator" style="color:var(--sky)">compare hiring costs</a> first.</p>
+    </div>
+  </section>
+  <section class="block">
+    <div class="container" style="max-width:720px">
+      <form id="contact-form" onsubmit="return submitContact(event)">
+        <div class="grid-2">
+          <div class="field"><label for="f-name">Name</label><input type="text" id="f-name" required></div>
+          <div class="field"><label for="f-company">Company</label><input type="text" id="f-company" required></div>
+        </div>
+        <div class="grid-2">
+          <div class="field"><label for="f-role">Your role</label><input type="text" id="f-role" placeholder="e.g. CFO, VP Finance"></div>
+          <div class="field"><label for="f-email">Work email</label><input type="email" id="f-email" required></div>
+        </div>
+        <div class="field">
+          <label for="f-source">What are you looking to source?</label>
+          <select id="f-source">
+            <option>FP&amp;A Analyst</option>
+            <option>M&amp;A Analyst</option>
+            <option>Project Finance Analyst</option>
+            <option>Corporate Finance Analyst</option>
+            <option>Full Stack Engineer</option>
+            <option>Solar Engineer</option>
+            <option>Another role</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-time">Timeline</label>
+          <select id="f-time">
+            <option>As soon as possible</option>
+            <option>Within a month</option>
+            <option>This quarter</option>
+            <option>Exploring options</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-msg">Anything else we should know? (optional)</label>
+          <textarea id="f-msg" rows="4"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Send</button>
+      </form>
+      <div id="contact-success" style="display:none" class="success">
+        <span class="sub">Received.</span>
+        <p>Thanks. We'll reply within one business day with next steps and an honest read on how fast we can move for your role.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div>
+      <span class="logo" style="font-size:16px">TALERA</span>
+      <p class="fl" style="margin-top:8px">Nearshore talent placement · <a href="https://talera.co">talera.co</a> · <a href="mailto:ana@talera.co">ana@talera.co</a></p>
+    </div>
+    <nav aria-label="Footer">
+      <a href="#services">Services</a>
+      <a href="#case-study">Case Study</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+/* ---------------- Router ---------------- */
+const PAGES = ['home','services','case-study','about','blog','post-1','post-2','post-3','contact'];
+const ALIAS = {quiz:{page:'home',anchor:'quiz-anchor'}, calculator:{page:'services',anchor:'calc-anchor'}};
+
+function go(key){
+  let anchor = null;
+  if(ALIAS[key]){ anchor = ALIAS[key].anchor; key = ALIAS[key].page; }
+  if(!PAGES.includes(key)) key = 'home';
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  const el = document.getElementById('page-' + key);
+  if(el) el.classList.add('active');
+  document.querySelectorAll('[data-nav]').forEach(a => {
+    const k = a.getAttribute('data-nav');
+    const isBlog = key.startsWith('post-') && k === 'blog';
+    a.classList.toggle('active', k === key || isBlog);
+  });
+  document.getElementById('navlinks').classList.remove('open');
+  if(anchor){
+    const t = document.getElementById(anchor);
+    if(t) setTimeout(() => t.scrollIntoView({block:'start'}), 30);
+  } else {
+    window.scrollTo(0,0);
+  }
+}
+
+/* Intercept every internal link so navigation happens in-page, with no URL change.
+   Works identically in sandboxed previews and on a live domain. */
+document.addEventListener('click', function(e){
+  const a = e.target.closest('a[href^="#"]');
+  if(!a) return;
+  e.preventDefault();
+  go(a.getAttribute('href').slice(1));
+});
+
+/* Fallback: if the page is loaded or shared with a hash (deployed site), honor it. */
+function route(){ go((location.hash || '#home').replace('#','')); }
+window.addEventListener('hashchange', route);
+route();
+
+/* ---------------- Lead capture (front-end store) ---------------- */
+const LEADS = [];
+function captureLead(source, data){
+  LEADS.push({source, data, at: new Date().toISOString()});
+  console.log('Lead captured for follow-up:', LEADS[LEADS.length - 1]);
+}
+
+/* ---------------- Contact form ---------------- */
+function submitContact(e){
+  e.preventDefault();
+  captureLead('contact-form', {
+    name: document.getElementById('f-name').value,
+    company: document.getElementById('f-company').value,
+    role: document.getElementById('f-role').value,
+    email: document.getElementById('f-email').value,
+    sourcing: document.getElementById('f-source').value,
+    timeline: document.getElementById('f-time').value,
+    message: document.getElementById('f-msg').value
+  });
+  document.getElementById('contact-form').style.display = 'none';
+  document.getElementById('contact-success').style.display = 'block';
+  return false;
+}
+
+/* ---------------- Quiz ---------------- */
+const QUIZ = [
+  {q:'What is driving the need for more capacity?', opts:[
+    {t:'A role has been open for 30+ days and the work is piling up', s:2},
+    {t:'Deal or project volume is growing faster than the team', s:2},
+    {t:'The team is stretched every reporting or delivery cycle', s:1},
+    {t:'Planning ahead, no acute pressure yet', s:0}]},
+  {q:'Which role would you add first?', capture:'role', opts:[
+    {t:'FP&A Analyst', s:1},{t:'M&A Analyst', s:1},{t:'Project Finance Analyst', s:1},
+    {t:'Corporate Finance Analyst', s:1},{t:'Full Stack Engineer', s:1},{t:'Solar Engineer', s:1},
+    {t:'A different role', s:1}]},
+  {q:'Is there a clear owner for onboarding a new team member?', opts:[
+    {t:'Yes, a named person with time to do it', s:2},
+    {t:'Someone could take it on, not assigned yet', s:1},
+    {t:'No, onboarding tends to be improvised', s:0}]},
+  {q:'How does your team collaborate today?', opts:[
+    {t:'Fully remote-ready: shared docs, async updates, video by default', s:2},
+    {t:'The tools exist, the habits are partial', s:1},
+    {t:'Mostly in-person, remote work is the exception', s:0}]},
+  {q:'How documented are the processes this person would work in?', opts:[
+    {t:'Well documented: templates, checklists, defined handoffs', s:2},
+    {t:'Partly documented, some lives in people\'s heads', s:1},
+    {t:'Mostly undocumented', s:0}]},
+  {q:'How much time zone flexibility does the work allow?', opts:[
+    {t:'Overlap with U.S. Eastern or Central hours is all we need', s:2},
+    {t:'Some meetings are fixed, most work is flexible', s:2},
+    {t:'The role needs someone physically in our office', s:0}]},
+  {q:'How soon do you need this person productive?', opts:[
+    {t:'Within 2 to 4 weeks', s:2},
+    {t:'This quarter', s:1},
+    {t:'Exploring, no fixed date', s:0}]},
+  {q:'Who signs off on adding an embedded professional?', opts:[
+    {t:'I can decide', s:2},
+    {t:'Me plus one other person', s:1},
+    {t:'A committee or formal process', s:0}]}
+];
+let qIdx = 0, qScore = 0, qRole = '', qAnswers = [];
+
+function quizRender(){
+  const body = document.getElementById('quiz-body');
+  if(qIdx < QUIZ.length){
+    const item = QUIZ[qIdx];
+    const pct = Math.round((qIdx / QUIZ.length) * 100);
+    body.innerHTML =
+      '<div class="qprog"><span style="width:' + pct + '%"></span></div>' +
+      '<span class="qcount">Question ' + (qIdx+1) + ' of ' + QUIZ.length + '</span>' +
+      '<h3 style="margin-bottom:18px">' + item.q + '</h3>' +
+      item.opts.map((o,i) => '<button class="qopt" onclick="quizAnswer(' + i + ')">' + o.t + '</button>').join('');
+  } else {
+    quizResult();
+  }
+}
+function quizAnswer(i){
+  const item = QUIZ[qIdx];
+  qScore += item.opts[i].s;
+  qAnswers.push({q:item.q, a:item.opts[i].t});
+  if(item.capture === 'role') qRole = item.opts[i].t;
+  qIdx++;
+  quizRender();
+}
+function quizResult(){
+  const max = 13;
+  let tier, cls, headline, body, detail;
+  if(qScore >= 10){
+    tier = 'Ready now'; cls = 'tier-a';
+    headline = 'Your team is set up to get value from day one.';
+    body = 'You have the ownership, habits, and urgency that make embedded professionals productive fast. Teams in this position typically see real output inside the first two weeks' + (qRole && qRole !== 'A different role' ? ', and a ' + qRole + ' is one of our fastest placements' : '') + '.';
+    detail = 'At this stage the main risk is waiting: an open seat keeps redistributing work upward while the search runs. The next step is a scoping call to lock the role and see a shortlist within two weeks.';
+  } else if(qScore >= 6){
+    tier = 'Ready with minor setup'; cls = 'tier-b';
+    headline = 'You are one or two fixes away from a strong start.';
+    body = 'The fundamentals are in place. Closing the gaps you flagged, usually naming an onboarding owner or writing down the core process, takes days, not months, and an embedded professional can help document as they ramp.';
+    detail = 'Teams at this stage often start the search and the setup in parallel: by the time the shortlist arrives in two weeks, the gaps are closed. We can walk you through exactly what to prepare on a call.';
+  } else {
+    tier = 'Needs groundwork first'; cls = 'tier-c';
+    headline = 'Worth preparing before you add anyone, remote or local.';
+    body = 'Your answers point to gaps that would slow down any new hire: unclear ownership, undocumented process, or collaboration habits built around the office. The good news is these are fixable in weeks, and fixing them pays off regardless of who you hire.';
+    detail = 'We can share the short checklist we use to get teams placement-ready, and give you an honest read on when it makes sense to start a search.';
+  }
+  document.getElementById('quiz-body').innerHTML =
+    '<div class="qprog"><span style="width:100%"></span></div>' +
+    '<span class="qcount">Your result · ' + qScore + ' of ' + max + ' points</span>' +
+    '<span class="tier-badge ' + cls + '">' + tier + '</span>' +
+    '<h3 style="margin-bottom:10px">' + headline + '</h3>' +
+    '<p>' + body + '</p>' +
+    '<div class="gate" id="quiz-gate">' +
+      '<span class="sub" style="color:#fff;display:block;margin-bottom:6px">Get your full readiness report</span>' +
+      '<p>A question-by-question breakdown of your answers, what to fix first, and realistic timelines for your role. Sent by email.</p>' +
+      '<form onsubmit="return quizGate(event)">' +
+        '<input type="email" id="quiz-email" placeholder="Work email" required>' +
+        '<input type="text" id="quiz-company" placeholder="Company (optional)">' +
+        '<button class="btn btn-primary" type="submit">Send my report</button>' +
+      '</form>' +
+    '</div>' +
+    '<div style="margin-top:20px;display:flex;gap:12px;flex-wrap:wrap">' +
+      '<a class="btn btn-outline-dark btn-sm" href="#contact">Book a Call</a>' +
+      '<button class="btn btn-outline-dark btn-sm" onclick="quizRestart()">Retake the quiz</button>' +
+    '</div>' +
+    '<div id="quiz-detail" style="display:none;margin-top:22px" class="success"><span class="sub">Report on its way.</span><p>' + detail + ' We will follow up at the address you shared.</p></div>';
+}
+function quizGate(e){
+  e.preventDefault();
+  captureLead('readiness-quiz', {
+    email: document.getElementById('quiz-email').value,
+    company: document.getElementById('quiz-company').value,
+    score: qScore, roleInterest: qRole, answers: qAnswers
+  });
+  document.getElementById('quiz-gate').style.display = 'none';
+  document.getElementById('quiz-detail').style.display = 'block';
+  return false;
+}
+function quizRestart(){ qIdx = 0; qScore = 0; qRole = ''; qAnswers = []; quizRender(); }
+quizRender();
+
+/* ---------------- Calculator ---------------- */
+const ROLES = {
+  fpa:{name:'FP&A Analyst',      base:[80000,95000,110000,130000,145000]},
+  ma: {name:'M&A Analyst',       base:[90000,105000,125000,145000,165000]},
+  pf: {name:'Project Finance Analyst', base:[85000,100000,120000,140000,155000]},
+  cf: {name:'Corporate Finance Analyst', base:[75000,90000,105000,125000,140000]},
+  fs: {name:'Full Stack Engineer', base:[100000,120000,145000,165000,185000]},
+  se: {name:'Solar Engineer',    base:[90000,105000,125000,145000,160000]}
+};
+const SEN = ['Analyst','Associate','Senior','Lead','Manager'];
+const fmt = n => '$' + Math.round(n).toLocaleString('en-US');
+let lastCalc = null;
+
+function runCalc(){
+  const roleKey = document.getElementById('c-role').value;
+  const sen = parseInt(document.getElementById('c-sen').value, 10);
+  const role = ROLES[roleKey];
+  const custom = parseInt((document.getElementById('c-sal').value || '').replace(/[^0-9]/g,''), 10);
+  const base = (custom && custom >= 40000 && custom <= 500000) ? custom : role.base[sen];
+
+  // U.S. in-house: base + benefits/taxes (~35%, per BLS employer cost data) + recruiting amortized
+  const benefits = base * 0.35;
+  const recruit  = base * 0.05;
+  const inhouseTotal = base + benefits + recruit;
+
+  // U.S. contractor: rate premium over base (self-funded benefits/taxes), no employer overhead.
+  // Cheaper than in-house fully loaded, but not by as much as the hourly framing suggests.
+  const contractorTotal = base * 1.25;
+
+  // Talera pricing, estimated against the base salary entered (or the market band):
+  // Managed engagement ~20% below base (ongoing service included in the fee).
+  // Direct hire ~30% below base in year one (nearshore salary + one-time placement fee);
+  // lower from year two, when only the salary remains.
+  const talManaged = base * 0.80;
+  const talDirect  = base * 0.70;
+
+  lastCalc = {role: role.name, seniority: SEN[sen], base, inhouseTotal, contractorTotal, talManaged, talDirect};
+
+  document.getElementById('calc-out').innerHTML =
+    '<p class="form-note" style="margin-bottom:12px;color:#C9D4F2">Estimated annual cost · ' + role.name + ' · ' + SEN[sen] + ' · U.S. base assumption <span class="mono" style="color:var(--white)">' + fmt(base) + '</span></p>' +
+    '<div class="result-cols">' +
+      '<div class="rescol">' +
+        '<span class="ct">U.S. In-House Hire</span>' +
+        '<span class="total">' + fmt(inhouseTotal) + '</span><span class="per">per year, fully loaded</span>' +
+        '<ul>' +
+          '<li><span>Base salary</span><span class="lv">' + fmt(base) + '</span></li>' +
+          '<li><span>Benefits and payroll taxes</span><span class="lv">' + fmt(benefits) + '</span></li>' +
+          '<li><span>Recruiting, amortized</span><span class="lv">' + fmt(recruit) + '</span></li>' +
+        '</ul>' +
+        '<p class="buys"><strong>Buys you:</strong> a permanent employee on-site or local, with full ownership of development and retention. <strong>Timeline:</strong> typically 3 to 6 months to hire.</p>' +
+      '</div>' +
+      '<div class="rescol">' +
+        '<span class="ct">U.S. Contractor</span>' +
+        '<span class="total">' + fmt(contractorTotal) + '</span><span class="per">per year at full-time hours</span>' +
+        '<ul>' +
+          '<li><span>Contract rate premium</span><span class="lv">~25% over base</span></li>' +
+          '<li><span>Benefits, payroll taxes</span><span class="lv">none owed</span></li>' +
+          '<li><span>Vetting and replacement</span><span class="lv">on you</span></li>' +
+        '</ul>' +
+        '<p class="buys"><strong>Buys you:</strong> flexibility, no benefits or severance commitment, and a faster start than a hire. <strong>Trade-off:</strong> the rate premium narrows the savings, and you carry sourcing, vetting, and continuity risk yourself.</p>' +
+      '</div>' +
+      '<div class="rescol hi">' +
+        '<span class="ct">Talera Placement</span>' +
+        '<span class="total">~' + fmt(talManaged) + '</span><span class="per">managed engagement, estimated per year</span>' +
+        '<span class="total" style="font-size:19px;margin-top:12px">~' + fmt(talDirect) + '</span><span class="per">direct hire, estimated year one; lower from year two</span>' +
+        '<ul>' +
+          '<li><span>Sourcing, vetting, interviews</span><span class="lv">free</span></li>' +
+          '<li><span>Direct hire or managed</span><span class="lv">your choice</span></li>' +
+          '<li><span>Compliance, reviews, replacement</span><span class="lv">covered on managed</span></li>' +
+        '</ul>' +
+        '<p class="buys"><strong>Buys you:</strong> a vetted bilingual professional in your team in 2 to 4 weeks. Managed includes Talera\'s ongoing service: compliance, monthly reviews, and replacement coverage. Direct hire puts the professional on your payroll after a one-time placement fee. You pay nothing until you sign. Estimates only: final pricing depends on the professional\'s experience and is personalized to each engagement.</p>' +
+      '</div>' +
+    '</div>' +
+    '<div class="gate" id="calc-gate">' +
+      '<span class="sub" style="color:#fff;display:block;margin-bottom:6px">Get this breakdown as an exact quote</span>' +
+      '<p>We will send this comparison with a firm monthly figure for a ' + role.name + ' at ' + SEN[sen] + ' level, plus current shortlist availability.</p>' +
+      '<form onsubmit="return calcGate(event)">' +
+        '<input type="email" id="calc-email" placeholder="Work email" required>' +
+        '<input type="text" id="calc-company" placeholder="Company (optional)">' +
+        '<button class="btn btn-primary" type="submit">Send my quote</button>' +
+      '</form>' +
+    '</div>' +
+    '<div id="calc-done" style="display:none;margin-top:16px" class="success"><span class="sub">On its way.</span><p>Your comparison and an exact quote will arrive within one business day. If timing is tight, <a href="#contact">book a call</a> and we will walk through it live.</p></div>' +
+    '<p class="form-note" style="margin-top:14px;color:#C9D4F2">Estimates only. In-house figures use U.S. market salary bands plus typical employer costs. The Talera figure is an estimate for planning. Final pricing depends on the professional\'s experience and is personalized to each engagement, and sourcing, vetting, and interviews are free until you sign.</p>';
+}
+function calcGate(e){
+  e.preventDefault();
+  captureLead('cost-calculator', {
+    email: document.getElementById('calc-email').value,
+    company: document.getElementById('calc-company').value,
+    calc: lastCalc
+  });
+  document.getElementById('calc-gate').style.display = 'none';
+  document.getElementById('calc-done').style.display = 'block';
+  return false;
+}
+</script>
+</body>
+</html>
